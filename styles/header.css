@@ -1,0 +1,13 @@
+#info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: url(../assets/Background_Intro.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 1366;
+
+  
+}
