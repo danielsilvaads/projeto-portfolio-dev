@@ -1,13 +1,93 @@
 #info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-  background-color: url(../assets/Background_Intro.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 1366;
+    background-image: url(../assets/Background_Intro.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 7.5rem 10.187rem 11.437rem;
 
-  
+    & .image-perfil {
+        max-width: 65rem; /* 1040px */
+
+        & .container-image-perfil {
+            position: relative;
+
+            & img[src*="perfil_Image"] {
+                width: 7rem;
+                height: 7rem;
+                border-radius: 50%;
+                border: 2px solid var(--red);
+                padding: 0.25rem;
+            }
+
+            & img[src*="Code.png"] {
+                position: absolute;
+                width: 2rem;
+                height: 2rem;
+                right: 10px;
+                bottom: 0;
+            }
+        }
+    }
+
+    & div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        max-width: 42.5rem;
+
+        & p {
+            color: var(--gray-500);
+            font: var(--text-inconsolata-subtitle);
+            margin-top: 3.5rem;
+
+            & span {
+                color: var(--red);
+            }
+        }
+
+        & h1 {
+            font: var(--text-asap-lg);
+            margin-top: 0.5rem;
+        }
+
+        & small {
+            font: var(--text-maven-sm);
+            color: var(--gray-400);
+        }
+    }
+
+    & .container-tecnologias {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+
+        & div {
+            min-width: fit-content;
+            display: flex;
+            flex-direction: row;
+            margin-top: 5rem;
+
+            background-color: var(--gray-300);
+            border-radius: 30px;
+            padding: 0.5rem 1rem;
+
+            & > span {
+                font: var(--text-maven-md);
+                color: var(--gray-500);
+                margin-left: 0.5rem;
+            }
+        }
+    }
+
+    & .arrow {
+        & img {
+            margin-top: 5.875rem;
+        }
+    }
 }
