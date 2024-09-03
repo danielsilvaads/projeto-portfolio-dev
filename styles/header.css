@@ -8,6 +8,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     padding: 7.5rem 10.187rem 11.437rem;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
 
     & .image-perfil {
         max-width: 65rem; /* 1040px */
@@ -90,4 +91,6 @@
             margin-top: 5.875rem;
         }
     }
+    
 }
+

@@ -2,10 +2,11 @@
   margin-inline: auto;
   max-width: 1040px;
   margin-bottom: 144px;
+  
 
   header {
       align-items: center;
-
+    padding: 150px; /* Ajuste do padding do menu meu trabalho e o ícone*/
       & span {
           font: var(--text-inconsolata-subtitle);
           color: var(--red);
@@ -19,7 +20,7 @@
   }
 
   main {
-      margin-top: 56px;
+      margin-top: 12px; /*Ajuste do padding do texto do menu da section*/
 
       grid-auto-flow: row;
 
