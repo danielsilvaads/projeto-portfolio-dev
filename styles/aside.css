@@ -4,7 +4,7 @@
     height: 30rem;
   
     header {
-       align-items: center;
+      align-items: center;
   
         & span {
             font: var(--text-inconsolata-subtitle);
@@ -47,4 +47,111 @@
     background-color: var(--gray-100);
   }
 
+  .info-contacts {
+    background-image: url(../assets/Background_Contacts.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+
+  #contacts {
+    max-width: 420px;
+    margin: 128px auto 200px;
+
+    header {
+      align-items: center;
+
+      & span {
+        font: var(--text-inconsolata-subtitle);
+        color: var(--purple);
+      }
+
+      & h2 {
+        font: var(--text-asap-md);
+        color: var(--gray-600);
+        margin-top: 8px;
+      }
+
+      & small {
+        font: var(--text-maven-md);
+        color: var(--gray-500);
+        margin: 8px 0 48px;
+      }
+    }
+
+    .contacts-container {
+      width: 100%;
+      background-color: var(--gray-300);
+      padding: 1.25rem;
+
+      flex-direction: row;
+      justify-content: space-between;
+      align-content: center;
+
+      border-radius: 0.5rem;
+      border: 1.5px solid transparent;
+
+      & > div {
+          display: flex;
+          align-items: center;
+
+          a.link-contacts {
+              --icon: "";
+              background-image: var(--icon);
+              width: 1.75rem;
+              height: 1.75rem;
+              display: block;
+
+              &[aria-label="linkedin"] {
+                  --icon: url(../assets/icon/LinkedinLogo.svg);
+              }
+
+              &[aria-label="instagram"] {
+                  --icon: url(../assets/icon/InstagramLogo.svg);
+              }
+
+              &[aria-label="github"] {
+                  --icon: url(../assetS/icon/GithubLogo.svg);
+              }
+
+              &[aria-label="envelope"] {
+                  --icon: url(../assets/icon/EnvelopeSimple.svg);
+              }
+          }
+
+          & span {
+              font: var(--text-maven-md);
+              color: var(--gray-500);
+              margin-left: 0.75rem;
+          }
+      }
+
+      &:hover {
+          border: 1.5px solid var(--blue);
+          cursor: pointer;
+
+          a.link-contacts {
+              &[aria-label="linkedin"] {
+                  --icon: url(../assets/icon/linkedin-hover.svg);
+              }
+
+              &[aria-label="instagram"] {
+                  --icon: url(../assets/icon/instagram-hover.svg);
+              }
+
+              &[aria-label="github"] {
+                  --icon: url(../assetS/icon/github-hover.svg);
+              }
+
+              &[aria-label="envelope"] {
+                  --icon: url(../assets/icon/envelope-hover.svg);
+              }
+
+          }
+      }
+  }
+}
   
+
+
+
