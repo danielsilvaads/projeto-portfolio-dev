@@ -111,7 +111,7 @@
               }
 
               &[aria-label="github"] {
-                  --icon: url(../assetS/icon/GithubLogo.svg);
+                  --icon: url(../assets/icon/GithubLogo.svg);
               }
 
               &[aria-label="envelope"] {
